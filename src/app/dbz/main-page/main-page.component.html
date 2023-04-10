@@ -5,10 +5,8 @@
   <div class="col">
     <h3>Personajes</h3>
     <hr />
-    <ul>
-      <li>Krilin - 700</li>
-      <li>Goku - 15.000</li>
-      <li>Vegeta - 12.000</li>
+    <ul *ngFor="let personaje of personajes">
+      <li>{{ personaje.nombre }} - {{ personaje.poder }}</li>
     </ul>
   </div>
 
