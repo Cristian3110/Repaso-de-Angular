@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Personaje } from '../interface/dbz.interfaces';
 
 @Component({
   selector: 'app-personajes',
@@ -6,5 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./personajes.component.css'],
 })
 export class PersonajesComponent {
-  personajes: any[] = [];
+  // el input determina que es un componente hijo
+  @Input() personajes: Personaje[] = [];
 }
