@@ -17,4 +17,9 @@ export class MainPageComponent {
       poder: 15000,
     },
   ];
+
+  nuevo: Personaje = {
+    nombre: 'Maestro Roshi',
+    poder: 2500,
+  };
 }

@@ -10,7 +10,7 @@ export class AgregarComponent {
   //Definiendo
   @Input() personajes: Personaje[] = [];
 
-  nuevo: Personaje = {
+  @Input() nuevo: Personaje = {
     nombre: 'Trunk',
     poder: 15000,
   };
@@ -24,12 +24,13 @@ export class AgregarComponent {
     if (this.nuevo.nombre.trim().length === 0) {
       return;
     }
+    console.log(this.nuevo);
 
     this.personajes.push(this.nuevo);
     this.nuevo = {
       nombre: '',
       poder: 0,
     };
-    console.log(this.nuevo);
+    console.log(this.personajes);
   }
 }
